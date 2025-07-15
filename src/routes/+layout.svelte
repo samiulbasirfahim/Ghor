@@ -8,6 +8,7 @@
 <header>
 	<Navbar />
 </header>
+
 <main>
 	{@render children()}
 </main>
