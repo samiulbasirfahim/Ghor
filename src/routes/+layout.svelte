@@ -1,15 +1,17 @@
 <script lang="ts">
-	import Navbar from '$lib/components/layout/Navbar.svelte';
+	import { Footer, Navbar } from '$lib/components';
 	import '../app.css';
 
 	let { children } = $props();
 </script>
 
-<header>
+<header class="sticky top-0">
 	<Navbar />
 </header>
 
 <main>
 	{@render children()}
 </main>
-<footer></footer>
+<footer>
+	<Footer />
+</footer>

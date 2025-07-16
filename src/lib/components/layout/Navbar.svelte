@@ -4,10 +4,10 @@
 	let is_logged_in: boolean = $state(true);
 
 	let links: { title: string; href: string }[] = [
-		{ title: 'Buy', href: '/home' },
-		{ title: 'Rent', href: '/rent' },
-		{ title: 'Residencial', href: '/residencial' },
-		{ title: 'Commercial', href: '/commercial' }
+		{ title: 'Buy', href: '/houses?type=buy' },
+		{ title: 'Rent', href: '/houses?type=rent' },
+		{ title: 'Residencial', href: '/houses?category=residencial' },
+		{ title: 'Commercial', href: '/houses?category=commercial' }
 	];
 </script>
 
@@ -74,7 +74,7 @@
 			</ul>
 
 			<label for="my-drawer" class="drawer-button navbar-end lg:hidden">
-				<Icon font-size="22" icon="mingcute:menu-fill" />
+				<Icon font-size="28" icon="mingcute:menu-fill" />
 			</label>
 		</nav>
 	</div>
