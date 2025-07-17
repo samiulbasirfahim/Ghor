@@ -14,7 +14,10 @@
 		});
 
 		if (el) observer.observe(el);
-		return () => {};
+		return () => {
+			if (el) observer.unobserve(el);
+			observer.disconnect();
+		};
 	});
 </script>
 
